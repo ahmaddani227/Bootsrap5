@@ -1,0 +1,110 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+#projects {
+  background-color: #e2edff;
+}
+
+#technology {
+  background-color: #e2edff;
+}
+
+section {
+  padding-top: 5rem;
+  /* background-color: #ee7752; */
+  background-color: white;
+}
+
+.gallery-img {
+  width: 100%;
+}
+#gallery .row > * {
+  padding: 0;
+}
+
+/* Technology Section */
+.tech-box{
+    position: relative;
+    background-color: #0c6efd;
+    border-radius: 10px;
+    height: 500px;
+    /* overflow: hidden; */
+    transform-style: preserve-3d;
+}
+.tech-box::before{
+    content: 'MY';
+    position: absolute;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    font-style: italic;
+    top: 35px;
+    /* left: -100px; */
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+}
+.tech-box:hover::before{
+    opacity: .2;
+}
+
+.tech-box::after{
+    content: 'TECHNOLOGY';
+    position: absolute;
+    color: white;
+    font-size: 3.3em;
+    font-weight: bold;
+    font-style: italic;
+    top: 370px;
+    /* left: 510px; */
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+}
+.tech-box:hover::after{
+    opacity: .2;
+}
+.technology-name{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0,0,50px);
+    transition: .5s;
+}
+.tech-box:hover .technology-name{
+    top: 20px;
+    opacity: 1;
+}
+.tech-detail-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 80px);
+    opacity: 0;
+    transition: .5s;
+}
+.tech-box:hover .tech-detail-btn{
+    opacity: 1;
+    bottom: 20px;
+}
+
+.tech-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 100px);
+    /* background-color: black; */
+    max-width: 200px;
+    transition: .5s;
+}
+.tech-box:hover .tech-img{
+    transform: translate3d(-50%, -50%, 100px) scale(1.2);
+}
+
